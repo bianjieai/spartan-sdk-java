@@ -26,10 +26,18 @@ public enum MsgEnum {
 //    MSG_SWAP_ORDER("irismod.coinswap.MsgSwapOrder", .class),
     //nft
     MSG_ISSUE_DENOM("irismod.nft.MsgIssueDenom", proto.nft.Tx.MsgIssueDenom.class),
+    MSG_TRANSFER_DENOM("irismod.nft.MsgTransferDenom", proto.nft.Tx.MsgTransferDenom.class),
     MSG_TRANSFER_NFT("irismod.nft.MsgTransferNFT", proto.nft.Tx.MsgTransferNFT.class),
-    MSG_EDIT_NFT("irismod.nft.MsgEditNFT", proto.nft.Tx.MsgTransferNFT.class),
+    MSG_EDIT_NFT("irismod.nft.MsgEditNFT", proto.nft.Tx.MsgEditNFT.class),
     MSG_MINT_NFT("irismod.nft.MsgMintNFT", proto.nft.Tx.MsgMintNFT.class),
     MSG_BURN_NFT("irismod.nft.MsgBurnNFT", proto.nft.Tx.MsgBurnNFT.class),
+    //mt
+    MSG_MT_ISSUE_DENOM("irismod.mt.MsgIssueDenom", proto.mt.Tx.MsgIssueDenom.class),
+    MSG_MT_TRANSFER_DENOM("irismod.mt.MsgTransferDenom", proto.mt.Tx.MsgTransferDenom.class),
+    MSG_MT_TRANSFER_NFT("irismod.mt.MsgTransferNFT", proto.mt.Tx.MsgTransferMT.class),
+    MSG_MT_EDIT_NFT("irismod.mt.MsgEditNFT", proto.mt.Tx.MsgEditMT.class),
+    MSG_MT_MINT_NFT("irismod.mt.MsgMintNFT", proto.mt.Tx.MsgMintMT.class),
+    MSG_MT_BURN_NFT("irismod.mt.MsgBurnNFT", proto.mt.Tx.MsgBurnMT.class),
     //token
 //    MSG_ISSUE_TOKEN("irismod.token.MsgIssueToken", proto.nft.Tx.MsgIssueToken.class),
 //    MSG_EDIT_TOKEN("irismod.token.MsgEditToken", proto.nft.Tx.MsgEditToken.class),
@@ -47,7 +55,7 @@ public enum MsgEnum {
     //record
     MSG_CREATE_RECORD("irismod.record.MsgCreateRecord", proto.record.Tx.MsgCreateRecord.class),
     // service
-    MSG_DEFINE_SERVICE("irismod.record.MsgCreateRecord", proto.service.Tx.MsgDefineService.class),
+    MSG_DEFINE_SERVICE("irismod.record.MsgDefineService", proto.service.Tx.MsgDefineService.class),
     MSG_BIND_SERVICE("irismod.service.MsgBindService", proto.service.Tx.MsgBindService.class),
     MSG_CALL_SERVICE("irismod.service.MsgCallService", proto.service.Tx.MsgCallService.class),
     MSG_RESPOND_SERVICE("irismod.service.MsgRespondService", proto.service.Tx.MsgRespondService.class),
