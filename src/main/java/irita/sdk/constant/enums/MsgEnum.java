@@ -35,9 +35,9 @@ public enum MsgEnum {
     MSG_MT_ISSUE_DENOM("irismod.mt.MsgIssueDenom", proto.mt.Tx.MsgIssueDenom.class),
     MSG_MT_TRANSFER_DENOM("irismod.mt.MsgTransferDenom", proto.mt.Tx.MsgTransferDenom.class),
     MSG_MT_TRANSFER_NFT("irismod.mt.MsgTransferNFT", proto.mt.Tx.MsgTransferMT.class),
-    MSG_MT_EDIT_NFT("irismod.mt.MsgEditNFT", proto.mt.Tx.MsgEditMT.class),
-    MSG_MT_MINT_NFT("irismod.mt.MsgMintNFT", proto.mt.Tx.MsgMintMT.class),
-    MSG_MT_BURN_NFT("irismod.mt.MsgBurnNFT", proto.mt.Tx.MsgBurnMT.class),
+    MSG_MT_EDIT_MT("irismod.mt.MsgEditNFT", proto.mt.Tx.MsgEditMT.class),
+    MSG_MT_MINT_MT("irismod.mt.MsgMintNFT", proto.mt.Tx.MsgMintMT.class),
+    MSG_MT_BURN_MT("irismod.mt.MsgBurnNFT", proto.mt.Tx.MsgBurnMT.class),
     //token
 //    MSG_ISSUE_TOKEN("irismod.token.MsgIssueToken", proto.nft.Tx.MsgIssueToken.class),
 //    MSG_EDIT_TOKEN("irismod.token.MsgEditToken", proto.nft.Tx.MsgEditToken.class),
