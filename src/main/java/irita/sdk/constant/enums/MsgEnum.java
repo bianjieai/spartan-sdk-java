@@ -38,10 +38,10 @@ public enum MsgEnum {
     //mt
     MSG_MT_ISSUE_DENOM("irismod.mt.MsgIssueDenom", proto.mt.Tx.MsgIssueDenom.class),
     MSG_MT_TRANSFER_DENOM("irismod.mt.MsgTransferDenom", proto.mt.Tx.MsgTransferDenom.class),
-    MSG_MT_TRANSFER_MT("irismod.mt.MsgTransferNFT", proto.mt.Tx.MsgTransferMT.class),
-    MSG_MT_EDIT_MT("irismod.mt.MsgEditNFT", proto.mt.Tx.MsgEditMT.class),
-    MSG_MT_MINT_MT("irismod.mt.MsgMintNFT", proto.mt.Tx.MsgMintMT.class),
-    MSG_MT_BURN_MT("irismod.mt.MsgBurnNFT", proto.mt.Tx.MsgBurnMT.class),
+    MSG_MT_TRANSFER_MT("irismod.mt.MsgTransferMT", proto.mt.Tx.MsgTransferMT.class),
+    MSG_MT_EDIT_MT("irismod.mt.MsgEditMT", proto.mt.Tx.MsgEditMT.class),
+    MSG_MT_MINT_MT("irismod.mt.MsgMintMT", proto.mt.Tx.MsgMintMT.class),
+    MSG_MT_BURN_MT("irismod.mt.MsgBurnMT", proto.mt.Tx.MsgBurnMT.class),
     //token
 //    MSG_ISSUE_TOKEN("irismod.token.MsgIssueToken", proto.nft.Tx.MsgIssueToken.class),
 //    MSG_EDIT_TOKEN("irismod.token.MsgEditToken", proto.nft.Tx.MsgEditToken.class),
@@ -91,7 +91,7 @@ public enum MsgEnum {
     MSG_MINT("iritamod.opb.MsgMint", proto.opb.Tx.MsgMint.class),
     MSG_RECLAIM("iritamod.opb.MsgReclaim", proto.opb.Tx.MsgReclaim.class),
     //evm
-    MSG_ETNERMINT_TX("ethermint.evm.v1.MsgEthereumTx", proto.ethermint.evm.v1.Tx.MsgEthereumTx.class),
+    MSG_ETHERMINT_TX("ethermint.evm.v1.MsgEthereumTx", proto.ethermint.evm.v1.Tx.MsgEthereumTx.class),
     MSG_LEGACY_TX("ethermint.evm.v1.LegacyTx", proto.ethermint.evm.v1.Tx.LegacyTx.class),
     MSG_ACCESS_LIST_TX("ethermint.evm.v1.AccessListTx", proto.ethermint.evm.v1.Tx.AccessListTx.class),
     MSG_DYNAMIC_FEE_TX("ethermint.evm.v1.DynamicFeeTx", proto.ethermint.evm.v1.Tx.DynamicFeeTx.class),
