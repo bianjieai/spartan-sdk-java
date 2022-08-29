@@ -7,6 +7,10 @@ import proto.cosmos.feegrant.v1beta1.Tx;
 public enum MsgEnum {
     //tibc
     MSG_NFT_TRANSFER("tibc.apps.nft_transfer.v1.MsgNftTransfer", proto.tibc.apps.nft_transfer.v1.Tx.MsgNftTransfer.class),
+    MSG_TIBC_UPDATE_CLIENT("tibc.core.client.v1.MsgUpdateClient", proto.tibc.core.client.v1.Tx.MsgUpdateClient.class),
+    MSG_TIBC_ACKNOWLEDGEMENT("tibc.core.packet.v1.MsgAcknowledgement", proto.tibc.core.packet.v1.Tx.MsgAcknowledgement.class),
+    MSG_TIBC_CLEAN_PACKET("tibc.core.packet.v1.MsgCleanPacket", proto.tibc.core.packet.v1.Tx.MsgCleanPacket.class),
+    MSG_TIBC_RECV_CLEAN_PACKET("tibc.core.packet.v1.MsgRecvCleanPacket", proto.tibc.core.packet.v1.Tx.MsgRecvCleanPacket.class),
     //bank
     Msg_Send("cosmos.bank.v1beta1.MsgSend", proto.cosmos.bank.v1beta1.Tx.MsgSend.class),
     Msg_Multi_Send("cosmos.bank.v1beta1.MsgMultiSend", proto.cosmos.bank.v1beta1.Tx.MsgMultiSend.class),
@@ -83,6 +87,15 @@ public enum MsgEnum {
     MSG_INSTANTIATE_CONTRACT("cosmwasm.wasm.v1.MsgInstantiateContract", proto.cosmwasm.wasm.v1.Tx.MsgInstantiateContract.class),
     MSG_STORE_CODE("cosmwasm.wasm.v1.MsgStoreCode", proto.cosmwasm.wasm.v1.Tx.MsgStoreCode.class),
     MSG_MIGRATE_CONTRACT("cosmwasm.wasm.v1.MsgMigrateContract", proto.cosmwasm.wasm.v1.Tx.MsgMigrateContract.class),
+    //OPB
+    MSG_MINT("iritamod.opb.MsgMint", proto.opb.Tx.MsgMint.class),
+    MSG_RECLAIM("iritamod.opb.MsgReclaim", proto.opb.Tx.MsgReclaim.class),
+    //evm
+    MSG_ETNERMINT_TX("ethermint.evm.v1.MsgEthereumTx", proto.ethermint.evm.v1.Tx.MsgEthereumTx.class),
+    MSG_LEGACY_TX("ethermint.evm.v1.LegacyTx", proto.ethermint.evm.v1.Tx.LegacyTx.class),
+    MSG_ACCESS_LIST_TX("ethermint.evm.v1.AccessListTx", proto.ethermint.evm.v1.Tx.AccessListTx.class),
+    MSG_DYNAMIC_FEE_TX("ethermint.evm.v1.DynamicFeeTx", proto.ethermint.evm.v1.Tx.DynamicFeeTx.class),
+
 
     ;
 
