@@ -26,6 +26,7 @@ public enum MsgEnum {
 //    MSG_SWAP_ORDER("irismod.coinswap.MsgSwapOrder", .class),
     //nft
     MSG_ISSUE_DENOM("irismod.nft.MsgIssueDenom", proto.nft.Tx.MsgIssueDenom.class),
+    MSG_TRANSFER_DENOM("irismod.nft.MsgTransferDenom", proto.nft.Tx.MsgTransferDenom.class),
     MSG_TRANSFER_NFT("irismod.nft.MsgTransferNFT", proto.nft.Tx.MsgTransferNFT.class),
     MSG_EDIT_NFT("irismod.nft.MsgEditNFT", proto.nft.Tx.MsgEditNFT.class),
     MSG_MINT_NFT("irismod.nft.MsgMintNFT", proto.nft.Tx.MsgMintNFT.class),
