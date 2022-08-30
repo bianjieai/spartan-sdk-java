@@ -11,6 +11,7 @@ public enum MsgEnum {
     MSG_TIBC_ACKNOWLEDGEMENT("tibc.core.packet.v1.MsgAcknowledgement", proto.tibc.core.packet.v1.Tx.MsgAcknowledgement.class),
     MSG_TIBC_CLEAN_PACKET("tibc.core.packet.v1.MsgCleanPacket", proto.tibc.core.packet.v1.Tx.MsgCleanPacket.class),
     MSG_TIBC_RECV_CLEAN_PACKET("tibc.core.packet.v1.MsgRecvCleanPacket", proto.tibc.core.packet.v1.Tx.MsgRecvCleanPacket.class),
+    MSG_TIBC_RECV_PACKET("tibc.core.packet.v1.MsgRecvPacket", proto.tibc.core.packet.v1.Tx.MsgRecvPacket.class),
     //bank
     Msg_Send("cosmos.bank.v1beta1.MsgSend", proto.cosmos.bank.v1beta1.Tx.MsgSend.class),
     Msg_Multi_Send("cosmos.bank.v1beta1.MsgMultiSend", proto.cosmos.bank.v1beta1.Tx.MsgMultiSend.class),
@@ -59,7 +60,7 @@ public enum MsgEnum {
     //record
     MSG_CREATE_RECORD("irismod.record.MsgCreateRecord", proto.record.Tx.MsgCreateRecord.class),
     // service
-    MSG_DEFINE_SERVICE("irismod.record.MsgDefineService", proto.service.Tx.MsgDefineService.class),
+    MSG_DEFINE_SERVICE("irismod.service.MsgDefineService", proto.service.Tx.MsgDefineService.class),
     MSG_BIND_SERVICE("irismod.service.MsgBindService", proto.service.Tx.MsgBindService.class),
     MSG_CALL_SERVICE("irismod.service.MsgCallService", proto.service.Tx.MsgCallService.class),
     MSG_RESPOND_SERVICE("irismod.service.MsgRespondService", proto.service.Tx.MsgRespondService.class),
