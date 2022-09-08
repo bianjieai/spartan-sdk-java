@@ -1,4 +1,4 @@
-package irita.sdk.crypto.recover;
+package irita.sdk.crypto.eth;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import org.apache.tuweni.bytes.Bytes;

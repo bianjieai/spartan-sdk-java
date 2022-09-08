@@ -1,4 +1,4 @@
-package irita.sdk.crypto.recover.libsecp256k1;
+package irita.sdk.crypto.eth.libsecp256k1;
 
 
 import com.sun.jna.*;

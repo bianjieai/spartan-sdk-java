@@ -1,14 +1,12 @@
-package irita.sdk.crypto.recover;
+package irita.sdk.crypto.eth;
 
 
 import org.apache.tuweni.bytes.Bytes;
 import org.apache.tuweni.bytes.MutableBytes;
 import org.bouncycastle.crypto.params.ECDomainParameters;
 import org.bouncycastle.math.ec.ECPoint;
-import org.bouncycastle.math.ec.FixedPointCombMultiplier;
 
 import java.math.BigInteger;
-import java.util.Arrays;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 

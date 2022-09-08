@@ -1,4 +1,4 @@
-package irita.sdk.crypto.recover;
+package irita.sdk.crypto.eth;
 
 
 import irita.sdk.util.Bech32Utils;
@@ -8,7 +8,6 @@ import org.apache.tuweni.bytes.MutableBytes;
 import org.apache.tuweni.units.bigints.UInt256;
 import org.bouncycastle.asn1.sec.SECNamedCurves;
 import org.bouncycastle.asn1.x9.X9ECParameters;
-import org.bouncycastle.crypto.ec.CustomNamedCurves;
 import org.bouncycastle.crypto.params.ECDomainParameters;
 import org.web3j.utils.Numeric;
 import proto.ethermint.evm.v1.Tx;

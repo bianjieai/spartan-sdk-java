@@ -1,4 +1,4 @@
-package irita.sdk.crypto.recover;
+package irita.sdk.crypto.eth;
 
 import org.apache.tuweni.bytes.Bytes32;
 

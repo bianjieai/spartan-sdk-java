@@ -1,10 +1,10 @@
-package irita.sdk.crypto.recover.libsecp256k1;
+package irita.sdk.crypto.eth.libsecp256k1;
 
 
 import com.sun.jna.ptr.LongByReference;
-import irita.sdk.crypto.recover.AbstractSECP256;
-import irita.sdk.crypto.recover.SECPPublicKey;
-import irita.sdk.crypto.recover.SECPSignature;
+import irita.sdk.crypto.eth.AbstractSECP256;
+import irita.sdk.crypto.eth.SECPPublicKey;
+import irita.sdk.crypto.eth.SECPSignature;
 import org.apache.tuweni.bytes.Bytes;
 import org.apache.tuweni.bytes.Bytes32;
 import org.bouncycastle.math.ec.custom.sec.SecP256K1Curve;
