@@ -1,3 +1,3 @@
 # spartan-sdk-java
 
-###requirement:jdk11
+###requirement:jdk11 or greater version
