@@ -79,7 +79,9 @@ public class ClientTest extends ConfigTest {
             proto.ethermint.evm.v1.Tx.MsgEthereumTx msgEthereumTx =proto.ethermint.evm.v1.Tx.MsgEthereumTx.parseFrom (generatedMessageV3.toByteString());
             proto.ethermint.evm.v1.Tx.LegacyTx legacyTx = proto.ethermint.evm.v1.Tx.LegacyTx.parseFrom(msgEthereumTx.getData().getValue());
             LegacyTransaction legacyTransaction = new LegacyTransaction(legacyTx);
-            System.out.println(legacyTransaction.getSender());
+            String addr = legacyTransaction.getSender();
+            System.out.println(addr);
+            assertEquals("iaa1qjcpag8wuw0pzm9qycn3athppp4k24ntgwmtl5",addr);
         }
     }
 
