@@ -3,11 +3,8 @@ package irita.sdk;
 import com.google.protobuf.GeneratedMessageV3;
 import irita.sdk.client.BaseClient;
 import irita.sdk.client.IritaClient;
-import irita.sdk.config.ClientConfig;
-import irita.sdk.config.OpbConfig;
 import irita.sdk.constant.enums.BroadcastMode;
-import irita.sdk.key.KeyManager;
-import irita.sdk.key.KeyManagerFactory;
+import irita.sdk.crypto.eth.LegacyTransaction;
 import irita.sdk.model.*;
 import irita.sdk.model.block.BlockDetail;
 import irita.sdk.model.tx.Condition;
@@ -67,6 +64,21 @@ public class ClientTest extends ConfigTest {
         String hash = "EC3C341C319EC4A5AAAA77732B3016CACFC7FD68A19656FB70DFFF85AFC4C4E1";//tibc
         ResultQueryTx resultQueryTx = client.getBaseClient().queryTx(hash);
         assertNotNull(resultQueryTx);
+    }
+
+    @Test
+    @Disabled
+    public void queryTxEvmGetSender() throws IOException, NoSuchMethodException, IllegalAccessException, InvocationTargetException {
+        ResultQueryTx result = client.getBaseClient().queryTx("4B6E1F2BA9B93CF51D354087348527FC21857AB190EBC6A5A20FCEF0D9F49687");
+        List<GeneratedMessageV3> messageList = result.getTx().getBody().getMsgs();
+        for (GeneratedMessageV3 generatedMessageV3 : messageList){
+            proto.ethermint.evm.v1.Tx.MsgEthereumTx msgEthereumTx =proto.ethermint.evm.v1.Tx.MsgEthereumTx.parseFrom (generatedMessageV3.toByteString());
+            proto.ethermint.evm.v1.Tx.LegacyTx legacyTx = proto.ethermint.evm.v1.Tx.LegacyTx.parseFrom(msgEthereumTx.getData().getValue());
+            LegacyTransaction legacyTransaction = new LegacyTransaction(legacyTx);
+            String addr = legacyTransaction.getSender();
+            System.out.println(addr);
+            assertEquals("iaa1qjcpag8wuw0pzm9qycn3athppp4k24ntgwmtl5",addr);
+        }
     }
 
     @Test
